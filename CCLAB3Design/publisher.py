@@ -5,6 +5,8 @@ import time
 import random 
 import numpy as np
 
+credPath = os.path.abspath('iron-ring-417318-9957ad4d30a1.json')
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credPath
 publisher = pubsub_v1.PublisherClient()
 topic_name = 'projects/iron-ring-417318/topics/smartMeter'.format(
     project_id=os.getenv('GOOGLE_CLOUD_PROJECT'),
