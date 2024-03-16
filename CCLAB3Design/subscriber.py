@@ -3,7 +3,8 @@ from google.cloud import pubsub_v1
 import json
 
 # Set Google Cloud credentials and project details
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"iron-ring-417318-9957ad4d30a1.json"
+credPath = os.path.abspath('iron-ring-417318-9957ad4d30a1.json')
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credPath
 project_id = "iron-ring-417318"
 subscription_id = "smartMeter-filtered-sub"
 
